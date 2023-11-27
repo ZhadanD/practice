@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 6</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container pt-5">
+    <h1>Тест</h1>
+    <h3>Максимальное кол-во баллов = 6</h3>
+
+    <form class="mt-3" action="check_test.php" method="post">
+        <div class="border border-success rounded p-3">
+            <h3>1. Однокоренными являются слова в ряду</h3>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input name="first_question_first_option" type="checkbox" class="btn-check" id="1" autocomplete="off">
+                <label class="btn btn-outline-success" for="1">1. звать, созыв</label>
+
+                <input name="first_question_second_option" type="checkbox" class="btn-check" id="2" autocomplete="off">
+                <label class="btn btn-outline-success" for="2">2. всемирный, смирный</label>
+
+                <input name="first_question_third_option" type="checkbox" class="btn-check" id="3" autocomplete="off">
+                <label class="btn btn-outline-success" for="3">3. проводить, вожатый</label>
+            </div>
+        </div>
+
+        <div class="border border-success rounded p-3 mt-3">
+            <h3>2. Суффиксальным способом образовано слово</h3>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input name="second_question_first_option" type="checkbox" class="btn-check" id="4" autocomplete="off">
+                <label class="btn btn-outline-success" for="4">1. мыслить</label>
+
+                <input name="second_question_second_option" type="checkbox" class="btn-check" id="5" autocomplete="off">
+                <label class="btn btn-outline-success" for="5">2. дружно (жить)</label>
+
+                <input name="second_question_third_option" type="checkbox" class="btn-check" id="6" autocomplete="off">
+                <label class="btn btn-outline-success" for="6">3. зеленый</label>
+            </div>
+        </div>
+
+        <div class="border border-success rounded p-3 mt-3">
+            <h3>3. Ко второму спряжению относится глагол</h3>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input name="third_question_first_option" type="checkbox" class="btn-check" id="7" autocomplete="off">
+                <label class="btn btn-outline-success" for="7">1. ненавидеть</label>
+
+                <input name="third_question_second_option" type="checkbox" class="btn-check" id="8" autocomplete="off">
+                <label class="btn btn-outline-success" for="8">2. хлынуть</label>
+
+                <input name="third_question_third_option" type="checkbox" class="btn-check" id="9" autocomplete="off">
+                <label class="btn btn-outline-success" for="9">3. хрустеть</label>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-success mt-3" value="Отправить">
+    </form>
+</div>
+</body>
+</html>
