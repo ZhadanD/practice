@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вычисление тригонометрических функций</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="mb-3">
+        <h1>Тригонометрические функции</h1>
+        <div class="border border-success rounded p-3">
+            <h3>Диапазон</h3>
+            <label for="from">От</label>
+            <input type="text" id="from" class="form-control">
+            <label for="before">До</label>
+            <input type="text" id="before" class="form-control">
+        </div>
+
+        <label for="step">Шаг</label>
+        <input type="text" id="step" class="form-control">
+
+        <p>Функция</p>
+        <select id="function" class="form-select">
+            <option value="sinus" selected>Синус</option>
+            <option value="kosinus">Косинус</option>
+            <option value="tangens">Тангенс</option>
+        </select>
+    </div>
+
+    <button class="btn btn-success" onclick="validation()">Вычислить</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
